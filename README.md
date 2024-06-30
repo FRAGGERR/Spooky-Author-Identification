@@ -34,14 +34,15 @@ Copy code
 import os
 import shutil
 
-# Ensure the .kaggle directory exists
+#Ensure the .kaggle directory exists
 os.makedirs(os.path.expanduser('~/.kaggle'), exist_ok=True)
 
-# Move the kaggle.json file to the .kaggle directory
+#Move the kaggle.json file to the .kaggle directory
 shutil.move('path_to_downloaded_kaggle.json', os.path.expanduser('~/.kaggle/kaggle.json'))
 
-# Set the permissions of the file to ensure it's not readable by others
+#Set the permissions of the file to ensure it's not readable by others
 os.chmod(os.path.expanduser('~/.kaggle/kaggle.json'), 0o600)
+
 Replace 'path_to_downloaded_kaggle.json' with the path where your kaggle.json file is located.
 
 
