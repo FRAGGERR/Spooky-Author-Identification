@@ -18,9 +18,8 @@ author - the author of the sentence (EAP: Edgar Allan Poe, HPL: HP Lovecraft; MW
 Step 1: Install the Kaggle API
 Ensure you have the Kaggle API installed. You can install it using pip:
 
-python
-Copy code
-!pip install kaggle
+
+`!pip install kaggle`
 Step 2: Set Up Kaggle API Credentials
 Go to Kaggle's website.
 Log in to your account.
