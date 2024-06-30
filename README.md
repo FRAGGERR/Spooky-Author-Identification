@@ -17,19 +17,20 @@ author - the author of the sentence (EAP: Edgar Allan Poe, HPL: HP Lovecraft; MW
 
 Step 1: Install the Kaggle API
 Ensure you have the Kaggle API installed. You can install it using pip:
-
-
 `!pip install kaggle`
+
+
 Step 2: Set Up Kaggle API Credentials
 Go to Kaggle's website.
 Log in to your account.
 Go to "My Account" by clicking on your profile picture.
 Scroll down to the "API" section and click on "Create New API Token". This will download a kaggle.json file containing your API credentials.
+
+
 Step 3: Place the kaggle.json File
 Move the kaggle.json file to a directory named .kaggle in your home directory. You can do this in a Jupyter notebook with the following commands:
 
-python
-Copy code
+```
 import os
 import shutil
 
@@ -41,7 +42,8 @@ shutil.move('path_to_downloaded_kaggle.json', os.path.expanduser('~/.kaggle/kagg
 
 #Set the permissions of the file to ensure it's not readable by others
 os.chmod(os.path.expanduser('~/.kaggle/kaggle.json'), 0o600)
+```
 
-Replace 'path_to_downloaded_kaggle.json' with the path where your kaggle.json file is located.
+Replace `'path_to_downloaded_kaggle.json'` with the path where your kaggle.json file is located.
 
 
